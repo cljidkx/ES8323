@@ -1073,10 +1073,6 @@ static struct snd_soc_component_driver soc_component_dev_es8323 = {
 	.controls = es8323_snd_controls,
 	.num_controls = ARRAY_SIZE(es8323_snd_controls),
 	.set_bias_level = es8323_set_bias_level,
-	.reg_cache_size = ARRAY_SIZE(es8323_reg),
-	.reg_word_size = sizeof(u16),
-	.reg_cache_default = es8323_reg,
-	.reg_cache_step = 1,
 	.read = es8323_read_reg_cache,
 	.write = es8323_write,
 
